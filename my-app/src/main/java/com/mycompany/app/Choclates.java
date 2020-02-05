@@ -19,7 +19,7 @@ public class Choclates extends Gift
 		choclate_price.add(price);
 	}
 	
-	public ArrayList<Integer> sortByWeight()
+	public static ArrayList<Integer> sortByWeight()
 	{
 		Collections.sort(choclate_weight);
 		return choclate_weight;
@@ -31,10 +31,8 @@ public class Choclates extends Gift
 		return choclate_price;
 	}
 	
-	public int candies()
+	public static int candies(int min_range,int max_range)
 	{
-		int min_range = 200;
-		int max_range = 600;
 		int count_candies = 0;
 		for (int i=0;i<choclate_weight.size();i++)
 		{
